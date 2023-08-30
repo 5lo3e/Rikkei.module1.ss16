@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+</head>
+<body>
+    <script>
+        let a =+prompt("Nhập năm cần ");
+        let checked = a =>{
+            if (a%4==0) {
+                if (a%100) {
+                    if (a%400) {
+                        return "Đó là năm nhuận"
+                    }
+                }
+                else{
+                    return "Đó là năm nhuận"
+                }
+            }
+            else{
+                return "Đó ko là năm nhuận"
+            }
+        }
+        console.log(checked(a));
+    </script>
+</body>
+</html>

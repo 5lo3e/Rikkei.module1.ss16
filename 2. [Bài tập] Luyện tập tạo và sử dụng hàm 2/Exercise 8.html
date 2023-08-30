@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 8</title>
+</head>
+<body>
+    <script>
+        
+        let number =prompt("Nhập số phần tử của mảng");
+        let arr=[];
+        for(let i =0; i< number;i++){
+            let text =prompt("Nhập phần tử thứ "+ (i+1));
+            if (text%1==0) {
+                arr[i]=text;
+            }
+            else{
+                alert("Ko thỏa mãn dữ liệu vui lòng nhập lại")
+                --i
+            }
+        }
+        console.log(arr);
+        let reverseArr= arr=> arr.reverse();
+        console.log(reverseArr(arr));
+
+       
+    </script>
+</body>
+</html>

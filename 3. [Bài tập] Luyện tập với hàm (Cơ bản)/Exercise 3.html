@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+</head>
+
+<body>
+    <script>
+        let check = text => {
+            if (text % 1 == 0) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+ 
+
+        for (i = 0; i < 1; i++) {
+            let a = prompt("Nhập 1 ký tự để kiểm tra");
+            if (a[1] !== undefined) {
+                alert("Chỉ nhập 1 ký tự");
+               --i;
+            }
+            else {
+                if (check(a)) {
+                    console.log("Đó là ký tự số");
+                }
+                else {
+                    console.log("Đó ko là ký tự số");
+
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

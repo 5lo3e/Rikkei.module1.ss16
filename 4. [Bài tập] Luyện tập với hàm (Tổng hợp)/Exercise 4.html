@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <script>
+        let text = prompt("Nhập chuỗi")
+        let checked = text => {
+            for (let i = 0; i < text.length; i++) {
+                let count = 0;
+                let Count = 0;
+                for (let j = 0; j < text.length; j++) {
+                    if (text[i] == text[j]) {
+                        count++;
+                    }
+                }
+                for (let l = -1; l < i; l++) {
+                    if (text[i] == text[l]) {
+                         Count++ ;
+                    }
+                }
+                if(Count==0){
+                console.log(`Ký tự ${text[i]} xuất hiện ${count} lần`);
+                }
+            }
+        }
+        checked(text)
+    </script>
+</body>
+
+</html>

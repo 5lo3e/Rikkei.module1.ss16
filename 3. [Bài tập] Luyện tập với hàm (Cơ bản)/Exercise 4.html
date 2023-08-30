@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+
+<body>
+    <script>
+        let check = b => {
+            if ((b % 1 == 0) && (b > 0)) {
+                return true;
+            }
+        }
+        for (i = 0; i < 1; i++) {
+            let a = prompt("Nhập 1 ký tự để kiểm tra");
+            if (a[1] !== undefined) {
+                alert("Chỉ nhập 1 ký tự");
+                --i;
+            }
+            else {
+                if (check(a)) {
+                    console.log("Đó là số nguyên dương  ");
+                }
+                else {
+                    console.log("Đó ko phải là số nguyên dương");
+
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
